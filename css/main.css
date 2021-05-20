@@ -1,0 +1,30 @@
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.clearfix:after {
+	content:'';
+	display: table;
+	width: 100%;
+	clear: both;
+}
+
+header {
+	background: url('../img/head-bg.jpg') no-repeat top right /cover;
+	padding-bottom: 160px;
+}
+
+.logo {
+	margin-top: 43px;
+	float: left;
+}
+
+.menu {
+	float: right;
+	display: block;
+}
