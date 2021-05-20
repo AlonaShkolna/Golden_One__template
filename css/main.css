@@ -2,6 +2,10 @@
 	box-sizing: border-box;
 }
 
+body {
+	font-family: Arial, sans-serif;
+}
+
 .container {
 	width: 940px;
 	margin: 0 auto;
@@ -19,12 +23,26 @@ header {
 	padding-bottom: 160px;
 }
 
-.logo {
-	margin-top: 43px;
+.logo {	
 	float: left;
+	margin-top: 43px;
 }
 
 .menu {
 	float: right;
 	display: block;
+	margin: 55px 0 0 0;
+}
+
+.menu li {
+	display: block;
+	float: left;
+}
+
+.menu a {
+	color: #fff;
+	font-size: 14px;
+	text-transform: uppercase;
+	text-decoration: none;
+	margin-left: 41px;
 }
