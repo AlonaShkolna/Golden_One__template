@@ -30,11 +30,16 @@ header {
 	background: url('../img/head-bg.jpg') no-repeat top right /cover;
 	padding-bottom: 160px;
 	color: #fff;
-	text-transform: uppercase;	
+	text-transform: uppercase;
+	text-align: center;	
 }
 
 .logo {		
 	margin-top: 43px;
+}
+
+.logo:hover {
+	transform: scale(1.1);
 }
 
 .menu {	
@@ -54,6 +59,10 @@ header {
 	margin-left: 41px;
 }
 
+.menu a:hover {
+	text-decoration: underline;
+}
+
 header p {
 	font-size: 40px;
 	text-align: center;
@@ -67,18 +76,19 @@ header h1 {
 	margin: 50px 0 60px 0;
 }
 
-header .button {
-	display: block;
-	text-align: center;
+header .button {	
 	color: #484543;
 	background: #fed136;
 	text-decoration: none;
-	border-radius: 3px;
-	width: 240px;
+	border-radius: 3px;	
 	margin: 0 auto;
-	padding: 25px 0;
+	padding: 25px 55px;
 	font-weight: bold;
 	font-size: 18px;
+}
+
+header .button:hover {
+	background: #fdde75;
 }
 
 #services {
@@ -108,9 +118,18 @@ header .button {
 	padding: 0 20px;
 }
 
+.services__item a {
+	display: inline-block;
+}
+
+.services__item a:hover img {
+	transform: scale(1.1);
+}
+
 .services__item h3 {
 	font-size: 18px;
-	font-weight: bold;	
+	font-weight: bold;
+	color: #000;		
 }
 
 .services__item p {
@@ -126,6 +145,52 @@ header .button {
 
 .gallery-item {
 	margin-right: 33px;
+}
+
+.gallery-item figure {
+	margin: 0;
+	position: relative;
+	width: 100%;
+    height: auto;
+}
+
+.gallery-item figcaption {
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    z-index: 1;   
+    text-transform: uppercase;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    background: #888;
+    font-size: 20px;
+    transform: translate(-50%, 100%);
+    opacity: 0;
+}
+
+.gallery-item figcaption, .gallery-item img {
+	transition: transform 0.35s;
+}
+
+.gallery-item a {
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	font-size: 14px;
+}
+
+.gallery-item:hover figcaption{
+	transform: translate(-50%, -50%);
+	opacity: 1;
+}
+
+.gallery-item:hover img {
+	opacity: 0.8;
+}
+
+.gallery-item a:hover {
+	transform: scale(1.1);
 }
 
 .gallery-item:last-child {
@@ -164,6 +229,15 @@ header .button {
 	margin: 0 30px 0 55px;
 }
 
+.item-title a {
+	color: #000;
+	text-decoration: none;
+}
+
+.item-title a:hover {
+	text-decoration: underline;
+}
+
 .about__item:nth-child(even) .item-title {
 	text-align: left;
 	margin: 0 55px 0 30px;
@@ -184,6 +258,11 @@ header .button {
 	font-size: 14px;
 	line-height: 1.55em;
 	letter-spacing: -0.75px;	
+}
+
+.about__item img:hover {
+	transform: scale(1.1);
+
 }
 
 footer {
